@@ -1,0 +1,13 @@
+version: 1
+disable_existing_loggers: False
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+  file:
+    class: logging.FileHandler
+    filename: .log
+    level: INFO
+root:
+  level: INFO
+  handlers: [console, file]
